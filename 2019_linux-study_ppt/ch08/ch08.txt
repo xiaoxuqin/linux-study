@@ -1,0 +1,10 @@
+1. find / -iname *gnome* 1(1可以省略)>tmp/findbuf 2> tmp/stderr
+2. 两个 >> 追加错误信息
+3. wc -l ：统计以下代码行数 ctrl+d 退出
+4.  find / -iname *gnome* 1> tmp/findbuf 2> /dev/null
+null 任何写进的数据被立即丢弃
+读这个文件，为空   “黑洞文件”
+5. 通过终端命令监测进程是否进行，获取进程PID， 然后阻止这个进程
+ps -e -o user,pid,ppid,comn,agrs | grep node | grep -v grep | awk -F ' ' '{printf $2}'
+kill apid 
+

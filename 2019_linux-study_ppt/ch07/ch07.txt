@@ -1,0 +1,7 @@
+安装tree软件
+nano基本使用
+vim基本使用
+
+sudo apt install sl    cmatrix   cowsay
+
+emacs
